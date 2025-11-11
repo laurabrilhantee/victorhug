@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('iphone.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+}
+.texto {
+  color: #000;
+  width: 45%; 
+  text-align: left;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem; 
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.2rem;
+  text-align: justify; 
+}
+img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .texto {
+    width: 90%;
+    text-align: center;
+  }
+
+  img {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+}
